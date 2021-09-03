@@ -247,7 +247,7 @@ void deletePin(int pos)
 
     fseek(ptr,0,SEEK_SET);  // Takes cursor in file to first position
 
-    for(int k = 0 ; k < pinLines(); k++) // Copies the contents of Password.txt to Temp2.txt
+    for(int k = 0 ; k < pinLine(); k++) // Copies the contents of Password.txt to Temp2.txt
     {
         fscanf(ptr,"%s",&garbage); // Inputs one line into garbage variable
         if( k == pos) 
@@ -256,7 +256,7 @@ void deletePin(int pos)
             continue;
         }
         fputs(garbage,tempPtr); // Inserts the line from Password.txt into Temp2.txt
-        if(k != pinLines() - 1)fputs("\n",tempPtr); // Prints New line in Temp2.txt
+        if(k != pinLine() - 1)fputs("\n",tempPtr); // Prints New line in Temp2.txt
 
     }
 
