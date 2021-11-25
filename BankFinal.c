@@ -23,6 +23,7 @@ Compiled on *GCC COMPILER*
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
+#include<conio.h>
 
 /* Structure contaning information of accounts*/
 
@@ -461,6 +462,7 @@ void main()
         {
             system("cls");
             printf("THANK YOU");
+		getch();
             return;
         }
 
